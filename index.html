@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>pink</title>
+</head>
+<body>
+<main>
+  
+  <form>
+    <section class="form form__bord">
+    <div class="form__wrapper">
+    <h1 class="form__title">Заказать забор</h1>
+
+    <div class="bord__length">
+      <p class="bord__length__text">Длина забора</p>
+      <div class="bord__length__wrapper">
+        <input required placeholder="0" class="bord__length__input" type="number">
+        <label for="bord__length__input" class="bord__length__label"></label>
+        <p data-type='bord__length__input' class="meter">метров</p>
+        
+      </div>
+      
+    </div>
+
+    <div class="bord__hight">
+      <p class="bord__hight__text">Высота забора</p>
+      <div class="bord__height__wrapper">
+        <input required placeholder="0" class="bord__height__input" type="number">
+        <label for="bord__height__input" class="bord__height__label"></label>
+        <p data-type='bord__height__input' class="meter">метров</p>
+      </div>
+    </div>
+
+
+    <p class="bord__style__title">Материал забора</p>
+      <ul class="bord__style">
+        <li value='0' class="bord__style__list bord__style__list--select">Выберите материал</li>
+        <li value='400' class="bord__style__list">Профнастил 400 Р за м²</li>
+        <li value='500' class="bord__style__list">Модули 500 Р за м²</li>
+        <li value='700' class="bord__style__list">Бетон 700 Р за м²</li>
+        <li value='200' class="bord__style__list">Сетка 200 Р за м²</li>
+      </ul>
+
+    
+
+    <div class="bord__checkbox__wrapper">
+      <input  class="bord__checkbox" type="checkbox" name="" id="bord__checkbox">
+      <label for="bord__checkbox" class="bord__checkbox__label">
+        Нужен монтаж</label>
+    </div>
+
+    <p class="total__summ">Сумма заказа: <span class="total__summ__rub">0₽</span></p>
+
+    <button disabled class='button bord__submit'>ДАЛЕЕ</button>
+  </div>
+</section>
+  
+
+  
+    <section class='form form__person'>
+    <a class="form__person__back">Вернуться</a>
+    <div class="form__wrapper">
+
+    
+    <h1 class="form__title">Пожалуйста, представьтесь</h1>
+
+    <div class="person__wrapper">
+      <label for="">Ваше имя</label>
+      <input type="text" class="person__name__input person__input" required>
+    </div>
+
+    <div class="person__wrapper">
+      <label for="">Электронная почта</label>
+      <input required type="email" class="person__email__input person__input" placeholder="test@mail.ru">
+    </div>
+
+    <div class="person__wrapper">
+      <label for="">Телефон</label>
+      <input required type="number" class="person__phone__input person__input" placeholder="+799999999">
+    </div>
+
+    <p class="person__final">Вы укомплектовали забор 
+      <span data-type='bord__length__input' class="person__final__size">длинной 0 метров</span> и 
+      <span data-type='bord__height__input' class="person__final__size">высотой 0 метра</span> из материала <span class="final__material">профнастил</span> на сумму <span class="total__summ__rub person__final__price">0₽</span></p>
+
+    <button disabled class='person__submit'>ОТПРАВИТЬ</button>
+  </div>
+</section>
+  </form>
+
+  <section class="pop-up">
+    <a class="pop-up__close">Закрыть</a>
+    <h1 class="form__title pop-up__title">
+      <span class="pop-up__name">Татьяна</span>,<br>
+      заказ <span>№ 8675</span> сформирован!</h1>
+      <p>Мы повторили его комплектацию
+        на почту<br>
+        <span class="pop-up__email">mail@mail.ru</span></p>
+      <p>В ближайшее время наш специалист<br> свяжется с вами по телефону<br>
+        <span class="pop-up__phone">+7 (917) 111-22-33</span>
+        </p>
+  </section>
+</main>
+
+</body>
+<script src="js/script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</html>
